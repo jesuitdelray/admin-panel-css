@@ -1,25 +1,57 @@
 .wrapper {
-  display: flex;
-  flex-direction: row;
+  position: relative;
+  margin-left: 300px;
+  display: grid;
   align-items: center;
   justify-content: end;
   padding: 0 10px;
-  background-color: rgb(0, 39, 67);
+  background-color: var(--color-navbar);
   height: 60px;
-  color: white;
+  color: var(--color-white);
 }
 
 .container {
+  display: flex;
+  text-align: center;
+}
+
+.portfolioContainer {
+  display: flex;
+  align-items: center;
+  margin: 0 100px 0 0;
+  position: absolute;
+  gap: 10px;
+  top: auto;
+  bottom: auto;
+  left: 30px;
 }
 
 .slider {
   display: flex;
   align-items: center;
-  gap: 15px;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 .avatar {
   width: 30px;
   height: 30px;
   border-radius: 50px;
+  margin-right: 5px;
+}
+
+.name {
+  margin-right: 10px;
+}
+
+.downarrow {
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  fill: white;
+  color: white;
+}
+
+.downarrow path {
+  fill: white;
 }

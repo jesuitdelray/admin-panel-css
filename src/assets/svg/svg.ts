@@ -1,17 +1,19 @@
-import artists from './artists.svg';
-import faq from './faq.svg';
-import howitworks from './howitworks.svg';
-import other from './other.svg';
-import portfolio from './portfolio.svg';
-import services from './services.svg';
-import testimonials from './testimonials.svg';
+import ArtistsIcon from './artists.svg';
+import FaqIcon from './faq.svg';
+import HowitworksIcon from './howitworks.svg';
+import OtherIcon from './other.svg';
+import PortfolioIcon from './portfolio.svg';
+import ServicesIcon from './services.svg';
+import TestimonialsIcon from './testimonials.svg';
+import DownarrowIcon from './downarrow.svg';
 
-export default {
-  artists,
-  faq,
-  howitworks,
-  other,
-  portfolio,
-  services,
-  testimonials,
+export const svg = {
+  ArtistsIcon,
+  FaqIcon,
+  HowitworksIcon,
+  OtherIcon,
+  PortfolioIcon,
+  ServicesIcon,
+  TestimonialsIcon,
+  DownarrowIcon,
 };

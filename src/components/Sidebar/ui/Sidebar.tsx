@@ -6,10 +6,10 @@ export function Sidebar() {
     <div className={styles.wrapper}>
       <div className={styles.content}>
         {list.map((link) => (
-          <p className={styles.link}>
+          <div className={styles.link}>
             <img src={link.svg} alt={link.text} className={styles.svg} />
             {link.text}
-          </p>
+          </div>
         ))}
       </div>
     </div>
