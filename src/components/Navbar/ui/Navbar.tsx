@@ -5,8 +5,9 @@ export function Navbar() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.slider}>
-          <p></p>
           <img src={avatar} alt="avatar" className={styles.avatar} />
+          <p>John</p>
+          <img src="" alt="" />
         </div>
       </div>
     </div>
