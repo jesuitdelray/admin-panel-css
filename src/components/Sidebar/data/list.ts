@@ -1,6 +1,4 @@
-import { svg } from 'src/assets/svg/svg';
-
-const {
+import {
   ArtistsIcon,
   FaqIcon,
   HowitworksIcon,
@@ -8,14 +6,14 @@ const {
   PortfolioIcon,
   ServicesIcon,
   TestimonialsIcon,
-} = svg;
+} from 'src/assets/icons';
 
 export const list = [
-  { svg: PortfolioIcon, text: 'Portfolio' },
-  { svg: ArtistsIcon, text: 'Artists' },
-  { svg: ServicesIcon, text: 'Services' },
-  { svg: TestimonialsIcon, text: 'Testimonials' },
-  { svg: HowitworksIcon, text: 'How It Works' },
-  { svg: FaqIcon, text: 'FAQ' },
-  { svg: OtherIcon, text: 'Other' },
+  { Svg: PortfolioIcon, text: 'Portfolio' },
+  { Svg: ArtistsIcon, text: 'Artists' },
+  { Svg: ServicesIcon, text: 'Services' },
+  { Svg: TestimonialsIcon, text: 'Testimonials' },
+  { Svg: HowitworksIcon, text: 'How It Works' },
+  { Svg: FaqIcon, text: 'FAQ' },
+  { Svg: OtherIcon, text: 'Other' },
 ];
