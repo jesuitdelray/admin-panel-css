@@ -9,20 +9,20 @@ export function ServicesIcon({ className }: { className?: string }) {
       className={className}
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M2 2H11V11H2V2ZM4 4V9H9V4H4Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M13 2H22V11H13V2ZM15 4V9H20V4H15Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M2 13H11V22H2V13ZM4 15V20H9V15H4Z"
         fill="black"
       />

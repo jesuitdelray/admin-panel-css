@@ -1,6 +1,6 @@
 import styles from './Navbar.module.scss';
 import { avatar } from '../data/list';
-import { DownArrowIcon, Exit, PortfolioIcon } from '../../../assets/icons';
+import { DownArrowIcon, ExitIcon, PortfolioIcon } from '../../../assets/icons';
 
 export function Navbar() {
   return (
@@ -18,7 +18,7 @@ export function Navbar() {
           </div>
           <div className={styles.dropdown}>
             Exit
-            <Exit className={styles.exitIcon} />
+            <ExitIcon className={styles.exitIcon} />
           </div>
         </div>
       </div>

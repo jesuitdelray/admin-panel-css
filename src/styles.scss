@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 * {
   margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 :root {
   --color-white: #fff;
@@ -10,4 +12,22 @@
   --color-black: #000;
   --color-dark-accent: #004373;
   --color-light-accent: #a8dbff;
+  //
+  --margin-sidebar: 300px;
+  --margin-navbar: 60px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-navbar);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-accent);
+  background-image: url(src\assets\photos\astraA.png) no-repeat center;
+  background-size: contain;
+  border-radius: 8px;
 }

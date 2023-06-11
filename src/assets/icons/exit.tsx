@@ -1,4 +1,4 @@
-export function Exit({ className }: { className?: string }) {
+export function ExitIcon({ className }: { className?: string }) {
   return (
     <svg
       version="1.0"

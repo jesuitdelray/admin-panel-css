@@ -10,14 +10,14 @@ export function TestimonialsIcon({ className }: { className?: string }) {
     >
       <path d="M5 7H13V9H5V7Z" fill="black" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M5 11H19V17H5V11ZM7 13V15H17V13H7Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M1 3H23V21H1V3ZM3 5V19H21V5H3Z"
         fill="black"
       />

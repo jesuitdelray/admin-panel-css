@@ -1,4 +1,4 @@
-import avatar from '../../../assets/avatar/avatar.webp';
+import avatar from 'src/assets/photos/avatar.webp';
 export { avatar };
 
 export const list = [

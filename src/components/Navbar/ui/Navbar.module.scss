@@ -1,6 +1,7 @@
 .wrapper {
-  position: relative;
-  margin-left: 300px;
+  top: 0;
+  position: fixed;
+  width: 100%;
   display: grid;
   align-items: center;
   text-align: center;
@@ -9,6 +10,7 @@
   background-color: var(--color-navbar);
   height: 60px;
   color: var(--color-white);
+  z-index: 1;
 }
 
 .container {
@@ -18,7 +20,7 @@
 
 .portfolioContainer {
   position: absolute;
-  left: 0;
+  left: var(--margin-sidebar);
   top: auto;
   bottom: auto;
   display: flex;

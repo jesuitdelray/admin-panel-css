@@ -6,7 +6,11 @@ import { PortfolioIcon } from './portfolio';
 import { ServicesIcon } from './services';
 import { TestimonialsIcon } from './testimonials';
 import { DownArrowIcon } from './downarrow';
-import { Exit } from './exit';
+import { ExitIcon } from './exit';
+import { GalleryBlockIcon } from './galleryBlock';
+import { GalleryRowIcon } from './galleryRow';
+import { EditIcon } from './edit';
+import { DeleteIcon } from './delete';
 
 export {
   ArtistsIcon,
@@ -17,5 +21,9 @@ export {
   ServicesIcon,
   TestimonialsIcon,
   DownArrowIcon,
-  Exit,
+  ExitIcon,
+  GalleryBlockIcon,
+  GalleryRowIcon,
+  EditIcon,
+  DeleteIcon,
 };

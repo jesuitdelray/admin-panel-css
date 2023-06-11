@@ -1,0 +1,39 @@
+.upperPart {
+  margin-top: calc(20px + var(--margin-navbar));
+  display: flex;
+  justify-content: space-between;
+}
+
+.uploadBtn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-dark-accent);
+  color: var(--color-white);
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 1px 0 0 var(--color-accent);
+  border: none;
+}
+
+.uploadBtn:hover {
+  cursor: pointer;
+}
+
+.uploadBtn:active {
+  background-color: var(--color-accent);
+}
+
+.icons {
+  display: flex;
+  margin-right: 120px;
+}
+
+.icon {
+  cursor: pointer;
+  width: 30px;
+  fill: var(--color-dark-accent);
+  margin-left: 20px;
+}
+
+.icon:active {
+  fill: var(--color-accent);
+}

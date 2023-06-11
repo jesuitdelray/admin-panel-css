@@ -12,8 +12,8 @@ export function FaqIcon({ className }: { className?: string }) {
       <path d="M8 7H10.01V9H8V7Z" fill="black" />
       <path d="M11 7H13.01V9H11V7Z" fill="black" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M1 3H23V21H1V3ZM3 5V19H21V5H3Z"
         fill="black"
       />
