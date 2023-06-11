@@ -13,26 +13,50 @@
   align-items: center;
   text-align: center;
   border: none;
-  background-color: var(--color-dark-accent);
-  color: var(--color-white);
+  color: var(--color-dark-accent);
   border-radius: 3px;
   box-shadow: 0 1px 0 0 var(--color-accent);
   cursor: pointer;
   margin-left: 20px;
 }
 
-.filterBtn:active {
-  background-color: var(--color-accent);
+.filterBtn:hover {
+  box-shadow: 0 1px 0 0 var(--color-white);
+  color: var(--color-dark-accent);
 }
 
 .downarrowIcon {
   width: 15px;
   margin-left: 5px;
-  fill: var(--color-white);
+  fill: var(--color-dark-accent);
+}
+
+.dropdown {
+  width: 95%;
+  margin-left: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.filterBtn:hover .dropdown,
+.filterBtn:active .dropdown {
+  display: flex;
+}
+
+.filterBtn:hover .dropdown {
+  box-shadow: 0 1px 0 0 var(--color-white);
+  color: var(--color-dark-accent);
 }
 
 @media screen and (max-width: 1250px) {
   .filterBtns {
     margin-left: 0;
+  }
+
+  .filterBtn {
+    width: 120px;
   }
 }

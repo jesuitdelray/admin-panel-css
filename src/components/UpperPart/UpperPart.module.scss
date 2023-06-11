@@ -16,6 +16,9 @@
 
 .uploadBtn:hover {
   cursor: pointer;
+  background-color: var(--color-navbar);
+  box-shadow: 0 1px 0 0 var(--color-dark-accent);
+  color: var(--color-light-accent);
 }
 
 .uploadBtn:active {
@@ -32,6 +35,10 @@
   width: 30px;
   fill: var(--color-dark-accent);
   margin-left: 20px;
+}
+
+.icon:hover {
+  box-shadow: 0 1px 0 0 var(--color-dark-accent);
 }
 
 .icon:active {
