@@ -1,5 +1,5 @@
 import styles from './Filter.module.scss';
-import { dropdownList, list } from '../data/list';
+import { list } from '../data/list';
 
 export function Filter() {
   return (
@@ -7,22 +7,17 @@ export function Filter() {
       <div className={styles.filterBtns}>
         {list.map((item) => {
           return (
-            <div>
-              <div className={styles.filterBtn}>
+            <select className={styles.filterBtn} key={item.text}>
+              <option className={styles.filterBtn}>
                 {item.text}
                 {<item.icon className={styles.downarrowIcon} />}
-              </div>
-              <div className={styles.dropdown}>
-                {dropdownList.map((item, index) => (
-                  <div key={index}>
-                    <p>{item[0]}</p>
-                    <p>{item.filter2}</p>
-                    <p>{item.filter3}</p>
-                    <p>{item.filter4}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+              </option>
+              {item.options.map((option) => (
+                <option className={styles.dropdown} key={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
           );
         })}
       </div>

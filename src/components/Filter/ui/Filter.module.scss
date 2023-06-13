@@ -6,23 +6,25 @@
 }
 
 .filterBtn {
-  width: 200px;
+  max-width: 200px;
   height: 40px;
+  white-space: pre-wrap;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: none;
+  border: 5px solid white;
+  box-sizing: content-box;
   color: var(--color-dark-accent);
   border-radius: 3px;
   box-shadow: 0 1px 0 0 var(--color-accent);
   cursor: pointer;
   margin-left: 20px;
+  color: var(--color-accent);
 }
 
 .filterBtn:hover {
-  box-shadow: 0 1px 0 0 var(--color-white);
-  color: var(--color-dark-accent);
+  box-shadow: 0 0 0 2px var(--color-accent);
 }
 
 .downarrowIcon {
@@ -31,19 +33,13 @@
   fill: var(--color-dark-accent);
 }
 
-.dropdown {
-  width: 95%;
-  margin-left: 20px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .filterBtn:hover .dropdown,
 .filterBtn:active .dropdown {
   display: flex;
+}
+
+.filterBtn:focus {
+  outline: none;
 }
 
 .filterBtn:hover .dropdown {
@@ -51,12 +47,12 @@
   color: var(--color-dark-accent);
 }
 
+.filterBtn:focus-within {
+  color: var(--color-dark-accent);
+}
+
 @media screen and (max-width: 1250px) {
   .filterBtns {
     margin-left: 0;
-  }
-
-  .filterBtn {
-    width: 120px;
   }
 }
