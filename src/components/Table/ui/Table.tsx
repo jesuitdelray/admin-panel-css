@@ -5,21 +5,17 @@ import { list } from '../data/list';
 
 export function Table() {
   return (
-    <table className={styles.table}>
-      <thead>
-        <tr className={styles.thead}>
-          <th>ID</th>
-          <th>Photo</th>
-          <th>Status</th>
-          <th>Name</th>
-          <th>Style</th>
-          <th>Edit/Delete</th>
-        </tr>
-      </thead>
-      <tbody>
+    <table className={styles.wrapper}>
+      <tbody className={styles.table}>
         {list.map((item) => (
           <tr key={item.id} className={styles.displayedContent}>
-            <td>{item.id}</td>
+            <td className={styles.checkboxContainer}>
+              <td>{item.id}</td>
+              <td>
+                <input type="checkbox" className={styles.checkboxIcon} />
+                <label className={styles.checkboxLabel}>Chosen</label>
+              </td>
+            </td>
             <td>
               <img src={item.photo} alt={item.name} className={styles.photo} />
             </td>

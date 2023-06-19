@@ -4,6 +4,25 @@
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
+
+// white theme
+/* :root {
+  --color-white: #fff;
+  --color-sidebar: #2d572c;
+  --color-accent: #0a4500;
+  --color-navbar: #21421e;
+  --color-black: #000;
+  --color-dark-accent: #123524;
+  --color-light-accent: #d0f0c0;
+  //
+  --margin-sidebar: 300px;
+  --margin-navbar: 60px;
+  //
+  --font-size-blockTable: 18px;
+  --font-size-base: 18px;
+} */
+
+//blue page/gray table
 :root {
   --color-white: #fff;
   --color-sidebar: #003153;
@@ -12,11 +31,54 @@
   --color-black: #000;
   --color-dark-accent: #004373;
   --color-light-accent: #a8dbff;
+  --color-table-initial: #949494;
+  --color-table-second: #d3d3d3;
+  --color-status-dropdown: #6a6a6a;
   //
   --margin-sidebar: 300px;
   --margin-navbar: 60px;
+  //
+  --font-size-blockTable: 18px;
+  --font-size-rowTable: 18px;
 }
 
+// gray theme
+/* :root {
+  --color-white: #fff;dd
+  --color-sidebar: #3f3f3f;
+  --color-accent: #6a6a6a;
+  --color-navbar: #2c2c2c;
+  --color-black: #000;
+  --color-dark-accent: #545454;
+  --color-light-accent: #808080;
+  --color-table-initial: #949494;
+  --color-table-second: #d3d3d3;
+  //
+  --margin-sidebar: 300px;
+  --margin-navbar: 60px;
+  //
+  --font-size-blockTable: 18px;
+  --font-size-rowTable: 18px;
+} */
+// blue theme
+/* :root {
+  --color-white: #fff;
+  --color-sidebar: #003153;
+  --color-accent: #007bd3;
+  --color-navbar: #002743;
+  --color-black: #000;
+  --color-dark-accent: #004373;
+  --color-light-accent: #a8dbff;
+  --color-table-initial: #005da0;
+  --color-table-second: #88cdff;
+  //
+  --margin-sidebar: 300px;
+  --margin-navbar: 60px;
+  //
+  --font-size-blockTable: 18px;
+  --font-size-rowTable: 18px;
+}
+ */
 ::-webkit-scrollbar {
   width: 5px;
 }

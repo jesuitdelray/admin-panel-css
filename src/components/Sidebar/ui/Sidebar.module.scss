@@ -56,4 +56,8 @@
   .wrapper {
     width: 280px;
   }
+
+  .link:hover {
+    transform: translateX(8%);
+  }
 }

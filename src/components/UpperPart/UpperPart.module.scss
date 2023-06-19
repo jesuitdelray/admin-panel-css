@@ -7,10 +7,10 @@
 .uploadBtn {
   width: 200px;
   height: 50px;
-  background-color: var(--color-dark-accent);
+  background-color: var(--color-accent);
   color: var(--color-white);
   border-bottom-right-radius: 5px;
-  box-shadow: 0 1px 0 0 var(--color-accent);
+  font-weight: bold;
   border: none;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .icon:hover {
-  box-shadow: 0 1px 0 0 var(--color-dark-accent);
+  box-shadow: 0 1px 0 0 var(--color-accent);
 }
 
 .icon:active {
