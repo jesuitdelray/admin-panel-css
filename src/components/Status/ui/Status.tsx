@@ -1,7 +1,11 @@
 import { DownArrowIcon } from 'src/assets/icons';
 import styles from './Status.module.scss';
 
-export function Status(isPublished: any) {
+interface StatusProps {
+  isPublished: boolean;
+}
+
+export function Status({ isPublished }: StatusProps) {
   return (
     <div>
       <td className={styles.status}>
