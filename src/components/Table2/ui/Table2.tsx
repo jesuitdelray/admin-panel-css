@@ -3,6 +3,7 @@ import { DeleteIcon } from 'src/assets/icons/delete';
 import { EditIcon } from 'src/assets/icons/edit';
 import { list } from 'src/components/Table/data/list';
 import { Status } from 'src/components/Status/ui/Status';
+import { DownArrowIcon } from 'src/assets/icons';
 
 export function Table2() {
   return (
@@ -31,7 +32,19 @@ export function Table2() {
               <td>
                 <img src={photo} alt={photo} className={styles.photo} />
               </td>
-              <Status isPublished={status} />
+              <td className={styles.status}>
+                {status ? (
+                  <p className={styles.statusIcons}>
+                    <div className={styles.statusGreen} />
+                    Published
+                  </p>
+                ) : (
+                  <p className={styles.statusIcons}>
+                    <div className={styles.statusRed} />
+                    Unpublished
+                  </p>
+                )}
+              </td>
               <td>{name}</td>
               <td>{style}</td>
               <td className={styles.editDelete}>

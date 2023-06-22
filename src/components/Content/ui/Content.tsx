@@ -9,7 +9,7 @@ export function Content() {
     <div className={styles.wrapper}>
       <UpperPart />
       <Filter />
-      <Table2 />
+      <Table />
     </div>
   );
 }

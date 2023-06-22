@@ -8,15 +8,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 100%;
-  border: 1px solid red;
 }
 
 .table th,
 .table td {
-  padding: 10px;
+  padding: 5px;
   text-align: left;
   font-size: var(--font-size-blockTable);
-  background-color: var(--color-white);
 }
 
 .table td {
@@ -24,26 +22,10 @@
   justify-content: center;
 }
 
-.checkboxContainer {
-  cursor: pointer;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 5px;
-}
-
-.checkboxLabel {
-  display: none;
-  margin-left: 10px;
-  font-size: var(--font-size-tableBlock);
-}
-
-.checkboxContainer:hover .checkboxLabel {
-  cursor: pointer;
-}
-
-.checkboxIcon {
-  width: 40px;
+.checkboxDropdownIcon {
+  position: relative;
+  width: 10px;
+  height: 10px;
 }
 
 .photo {
@@ -51,27 +33,50 @@
 }
 
 .displayedContent {
-  color: var(--color-white);
-  text-shadow: 0 0 1px var(--color-dark-accent);
-  padding: 20px 0 20px 0;
-  color: var(--color-accent);
-  background-color: var(--color-dark-accent);
+  color: var(--color-table-initial-block);
+  background-color: var(--color-white);
+  margin: 5px;
+  box-shadow: 0 0 1px 0 black;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .icon {
-  margin-right: 5px;
-  padding: 5px;
-  width: 40px;
-  fill: var(--color-dark-accent);
-  cursor: pointer;
+  stroke: var(--color-black);
+  width: 30px;
+  height: 30px;
 }
 
 .icon:hover {
-  box-shadow: 0 1px 1px 0 white;
+  stroke: var(--color-table-initial-block);
+  cursor: pointer;
 }
 
 .icon:active {
-  fill: var(--color-white);
+  stroke: var(--color-table-second);
+}
+
+.statusPublished,
+.statusUnpublished {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.publishedIcon {
+  margin: auto 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgb(114, 255, 114);
+}
+
+.unpublishedIcon {
+  margin: auto 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 111, 111);
 }
 
 @media screen and (max-width: 1250px) {
@@ -83,6 +88,5 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 100%;
-    border: 1px solid red;
   }
 }

@@ -71,6 +71,55 @@ tr:nth-child(2n) {
   cursor: pointer;
 }
 
+.status {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.statusIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 50%;
+  gap: 5px;
+  border-radius: 10px;
+  color: var(--color-table-initial);
+}
+
+.unpublishedIcon path {
+  fill: white;
+}
+
+.publishedIcon path {
+  fill: var(--color-white);
+}
+
+.unpublishedIcon,
+.publishedIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.statusGreen,
+.statusRed {
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+}
+
+.statusRed {
+  background-color: red;
+}
+
+.statusGreen {
+  background-color: green;
+  gap: 10px;
+}
+
 .editIcon {
   fill: var(--color-white);
 }

@@ -6,6 +6,7 @@ export const list = [
     photo: avatar,
     status: false,
     name: 'Valerii',
+    color: 'White',
     style: 'Style 1',
   },
   {
@@ -13,6 +14,7 @@ export const list = [
     photo: avatar,
     status: true,
     name: 'Artur',
+    color: 'White',
     style: 'Style 2',
   },
   {
@@ -20,6 +22,7 @@ export const list = [
     photo: avatar,
     status: false,
     name: 'Vadym',
+    color: 'White',
     style: 'Style 2',
   },
   {
@@ -27,6 +30,7 @@ export const list = [
     photo: avatar,
     status: true,
     name: 'Valerii',
+    color: 'White',
     style: 'Style 1',
   },
   {
@@ -34,6 +38,7 @@ export const list = [
     photo: avatar,
     status: true,
     name: 'Artur',
+    color: 'White',
     style: 'Style 2',
   },
   {
@@ -41,6 +46,7 @@ export const list = [
     photo: avatar,
     status: true,
     name: 'Vadym',
+    color: 'White',
     style: 'Style 2',
   },
   {
@@ -48,6 +54,7 @@ export const list = [
     photo: avatar,
     status: true,
     name: 'Vasya',
+    color: 'White',
     style: 'Style 1',
   },
   {
@@ -55,6 +62,7 @@ export const list = [
     photo: avatar,
     status: true,
     name: 'Artur',
+    color: 'White',
     style: 'Style 2',
   },
   {
@@ -62,6 +70,7 @@ export const list = [
     photo: avatar,
     status: true,
     name: 'Vadym',
+    color: 'White',
     style: 'Style 2',
   },
   {
@@ -69,6 +78,7 @@ export const list = [
     photo: avatar,
     status: true,
     name: 'Valerii',
+    color: 'White',
     style: 'Style 1',
   },
   {
@@ -76,6 +86,7 @@ export const list = [
     photo: avatar,
     status: false,
     name: 'Artur',
+    color: 'White',
     style: 'Style 2',
   },
   {
@@ -83,6 +94,7 @@ export const list = [
     photo: avatar,
     status: false,
     name: 'Vadym',
+    color: 'White',
     style: 'Style 2',
   },
 ];
