@@ -16,16 +16,16 @@
   padding: 5px;
   box-sizing: content-box;
   font-weight: bold;
-  color: var(--color-white);
-  background-color: var(--color-accent);
+  background-color: var(--color-moderate-accent);
+  box-shadow: 0 1px 0 0 var(--color-light-accent);
+  color: var(--color-accent);
   border-radius: 3px;
-  box-shadow: 0 1px 0 0 var(--color-accent);
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .filterBtn:hover {
-  box-shadow: 0 0 0 2px var(--color-accent);
+  box-shadow: 0 0 0 1px var(--color-accent);
 }
 
 .downarrowIcon {

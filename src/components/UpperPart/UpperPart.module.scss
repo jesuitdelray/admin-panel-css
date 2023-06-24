@@ -7,8 +7,9 @@
 .uploadBtn {
   width: 200px;
   height: 50px;
-  background-color: var(--color-accent);
-  color: var(--color-white);
+  background-color: var(--color-moderate-accent);
+  box-shadow: 0 1px 0 0 var(--color-dark-accent);
+  color: var(--color-accent);
   border-bottom-right-radius: 5px;
   font-weight: bold;
   border: none;
@@ -16,13 +17,11 @@
 
 .uploadBtn:hover {
   cursor: pointer;
-  background-color: var(--color-navbar);
-  box-shadow: 0 1px 0 0 var(--color-dark-accent);
-  color: var(--color-light-accent);
 }
 
 .uploadBtn:active {
-  background-color: var(--color-dark-accent);
+  background-color: var(--color-accent);
+  color: var(--color-white);
 }
 
 .icons {

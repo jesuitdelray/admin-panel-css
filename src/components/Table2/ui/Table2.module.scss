@@ -13,17 +13,30 @@
 }
 
 .table th {
-  background-color: var(--color-sidebar);
+  color: var(--color-white);
+  background-color: var(--color-dark-accent);
   height: 50px;
 }
 
+.table th:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 tr:nth-child(2n) {
-  background-color: var(--color-table-second);
+  background-color: var(--color-light-accent);
 }
 
 .table td {
   justify-content: center;
-  color: var(--color-table-initial);
+  color: var(--color-accent);
+}
+
+.table td:first-child {
+  display: flex;
+  padding: 0;
+  gap: 10px;
 }
 
 .photo,
@@ -32,20 +45,60 @@ tr:nth-child(2n) {
   height: 70px;
 }
 
-.checkbox {
-  height: 15px;
-  width: 100%;
+.idCheckbox {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  justify-content: center;
+  position: relative;
   cursor: pointer;
 }
 
-.displayedContent {
+.checkbox {
+  opacity: 0;
+}
+
+.idCheckbox::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-white);
+  border-radius: 3px;
+}
+
+.idCheckbox:checked::before {
+  background-color: var(--color-white);
+}
+
+.idCheckbox::after {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-accent);
+  font-size: 12px;
   font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.idCheckbox:checked::after {
+  opacity: 1;
 }
 
 .editDelete {
   display: flex;
   margin-top: 18px;
-  gap: 10px;
+  border-radius: 10px;
+}
+
+.editDeleteInternal {
+  background-color: var(--color-white);
+  box-shadow: 0 0 1px 0 var(--color-accent);
+  display: flex;
+  border-radius: 10px;
 }
 
 .editBtn {
@@ -63,12 +116,32 @@ tr:nth-child(2n) {
   cursor: pointer;
 }
 
+.editBtn:hover {
+  background-color: var(--color-moderate-accent);
+}
+
+.deleteIcon:hover {
+  stroke: var(--color-accent);
+}
+
+.deleteIcon:active {
+  stroke: var(--color-dark-accent);
+}
+
+.editBtn:active {
+  background-color: var(--color-accent);
+}
+
 .editIcon,
 .deleteIcon {
-  margin-right: 5px;
+  margin-right: 10px;
   width: 20px;
-  fill: var(--color-dark-accent);
   cursor: pointer;
+}
+
+.deleteIcon {
+  stroke: var(--color-dark-accent);
+  margin-left: 5px;
 }
 
 .status {
@@ -76,22 +149,19 @@ tr:nth-child(2n) {
   justify-content: center;
   width: 100%;
   height: 30px;
-  cursor: pointer;
 }
 
 .statusIcons {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 1px 0 var(--color-accent);
   height: 40px;
   width: 50%;
   gap: 5px;
   border-radius: 10px;
-  color: var(--color-table-initial);
-}
-
-.unpublishedIcon path {
-  fill: white;
+  font-weight: bold;
+  color: var(--color-accent);
 }
 
 .publishedIcon path {
@@ -118,10 +188,6 @@ tr:nth-child(2n) {
 .statusGreen {
   background-color: green;
   gap: 10px;
-}
-
-.editIcon {
-  fill: var(--color-white);
 }
 
 .icon:active {

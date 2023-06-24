@@ -10,7 +10,7 @@ export function Filter() {
             <select className={styles.filterBtn} key={item.text}>
               <option className={styles.filterBtn}>
                 {item.text}
-                {<item.icon className={styles.downarrowIcon} />}
+                <item.icon className={styles.downarrowIcon} />
               </option>
               {item.options.map((option) => (
                 <option className={styles.dropdown} key={option}>
