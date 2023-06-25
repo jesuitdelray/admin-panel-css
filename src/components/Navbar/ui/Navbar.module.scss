@@ -86,8 +86,7 @@
   cursor: pointer;
 }
 
-.sliderContainer:hover .dropdown,
-.sliderContainer:active .dropdown {
+.sliderContainer:hover .dropdown {
   display: block;
   color: var(--color-white);
   display: flex;
